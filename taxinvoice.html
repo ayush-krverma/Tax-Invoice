@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .invoice {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            float: left;
+            width: 300px; /* Adjust the size as needed */
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .header {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .invoice-details {
+            display: flex;
+            text-align: right;
+            justify-content: right;
+            font-size: 20px;
+        }
+        .invoice-details p {
+            margin: 0;
+        }
+        .customer-info {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .customer-info1 {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: right;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            border: 3px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: 20px;
+        }
+        .table th {
+            background-color: #f0f0f0;
+        }
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .total{
+            border: 3px solid #000;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        .total1{
+            border: 3px solid #000;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            font-size: 16px;
+            padding-left: 8px;
+            padding-right: 5px;
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="invoice">
+        <img src="https://companieslogo.com/img/orig/AMZN_BIG-accd00da.png?t=1632523695" alt="Amazon Logo" class="logo">
+        <div class="header">
+            <h1>Tax Invoice/Bill of Supply/Cash Memo</h1>
+        </div>
+        <div class="invoice-details">
+            <p><strong> Original for Recipient </strong></p>
+        </div>
+        <div class="container">
+        <div class="customer-info">
+            <h3><strong>Sold By:</strong></h3>
+            <h3><strong>R K WorldInfocom Pvt. Ltd.</strong></h3>
+            <p>HAFED Warehousing Complex, New Anaj Mandi,</p>
+            <p>GURUGRAM Dist Gurgaon,Haryana, 122001 IN</p>
+        </div>
+        <div class="customer-info1">
+            <h3><strong>Billing Address :</strong></h3>
+            <h3><strong>Saurabh Abhishek</strong></h3>
+            <p>861 Ground Floor, Sector 47</p>
+            <p>Gurgaon,Haryana, 122018 IN</p>
+            <p><strong>State/UT Code : </strong>06 </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="customer-info">
+            <h3><strong>PAN No:</strong> AAECR0564M</h3>
+            <h3><strong>GST Registration No:</strong> 06AAECR0564M1Z7</p>
+        </div>
+        <div class="customer-info1">
+            <h3><strong>Shipping Address :</strong></h3>
+            <h3><strong>Saurabh Abhishek</strong></h3>
+            <p>861 Ground Floor, Sector 47</p>
+            <p>Gurgaon,Haryana, 122018 IN</p>
+            <p><strong>State/UT Code : </strong>06 </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="customer-info">
+            <h3><strong>Order Number :</strong> 407-8427449-1015518 </h3>
+            <h3><strong>Order Date : </strong>04.09.2023</p>
+        </div>
+        <div class="customer-info1">
+            <h3><strong>Place of Supply:</strong> HARYANA</h3>
+            <h3><strong>Place of Delivery:</strong> HARYANA</h3>
+            <h3><strong>Invoice Number:</strong> FDLB-228682</h3>
+            <h3><strong>Invoice Details:</strong> HR-FDLB-1293787125-2324</h3>
+            <h3><strong>Invoice Date:</strong> 04.09.2023</h3>
+        </div>
+    </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Sl. No</th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                    <th>Qty</th>
+                    <th>Net Amount</th>
+                    <th>Tax Rate</th>
+                    <th>Tax Type</th>
+                    <th>Tax Amount</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Organic Harvest Cold Pressed Extra Virgin Coconut Oil | For Hair & Skin | For Men & Women | Ideal For All Type Skin & Hair Growth | Unbleached & Unrefined | Sulphate & Paraben Free - 200ml | B0928X4Y6G ( B0928X4Y6G ) HSN:33059090</td>
+                    <td>₹233.90</td>
+                    <td>1</td>
+                    <td>₹233.90</td>
+                    <td>9%</td>
+                    <td>CGST</td>
+                    <td>₹21.05</td>
+                    <td>₹276.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>9%</td>
+                    <td>SGST</td>
+                    <td>₹21.05</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>TOTAL : </strong> </td>
+                    <td>₹233.90</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>₹42.10</td>
+                    <td>₹276.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total">
+            <h3>Total Amount in Words :</h3>
+            <p><strong>Two Hundred Seventy-six Only</strong></p>
+        </div>
+        <div class="total1">
+            <h2>For R K WorldInfocom Pvt. Ltd :</h2>
+            <h3>Authorized Signatory</h3>
+        </div>
+        <h2>Whether Tax is Payable under Reverse Charge - No</h2>
+        <div class="footer">
+                <p><strong>Payment Transaction ID :</strong>2ltMAFf4QZ2MZoJBrUDK</p>
+                <p><strong>Date & Time :</strong>04/09/2023, 08:44:25 hrs</p>
+                <p><strong>Invoice Value :</strong>276.00</p>
+                <p><strong>Mode of Payment :</strong>Credit Card</p>
+        </div>
+    </div>
+</body>
+</html>
